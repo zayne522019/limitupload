@@ -16,7 +16,7 @@
         }
 
         else{
-            $target_dir = "uploads/";
+            $target_dir = "";
             $target_file = $target_dir . basename($_FILES["file_upload"]["name"]);
             if(move_uploaded_file($_FILES["file_upload"]["tmp_name"], $target_file)){ 
             echo "The file ". basename($_FILES["file_upload"]["name"]). " has been uploaded.";
